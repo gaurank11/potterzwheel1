@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: #212121; /* Gray-900 */
+    --color-secondary: #1E90FF; /* Blue-500 */
+    --color-accent: #FFC107; /* Amber-400 */
+    --color-background: #F9FAFB; /* Gray-50 */
+    --color-card: #FFFFFF; /* White */
+    --color-text-primary: #F9FAFB; /* Light Gray */
+    --color-text-secondary: #616161; /* Gray-700 */
+  }
+  
+  
+  /* Optional: Apply colors globally for the body */
+  
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-in-out;
+  }
+  
