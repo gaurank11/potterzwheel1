@@ -52,7 +52,7 @@ const Content = () => {
   return (
     <section
       id="content"
-      className="max-w-7xl mx-auto py-12 px-6 font-dm-sans text-gray-600"
+      className="max-w-3xl mx-auto py-12 px-6 font-dm-sans text-gray-600"
       style={{
         fontFamily: "DM Sans, sans-serif",
       }}
