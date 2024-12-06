@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { Phone, Mail, Link, Instagram, Facebook, Twitter, Linkedin, MapPin, MapPinned,ContactIcon, TouchpadIcon, Edit2Icon, EditIcon } from 'lucide-react';
+import { Phone, Mail, Link, Instagram, Facebook, XIcon, Linkedin, MapPin, MapPinned,ContactIcon, TouchpadIcon, Edit2Icon, EditIcon } from 'lucide-react';
 
 const Content = () => {
   const [formData, setFormData] = useState({
@@ -65,7 +65,7 @@ const Content = () => {
             fontFamily: "NOURD Bold, sans-serif",
           }}
         >
-          <h2 className="text-3xl font-bold mb-4 text-white flex items-center md: gap-4 md:mx-10">
+          <h2 className="text-3xl font-bold mb-4 text-white flex items-center md:gap-4 md:mx-10">
             Reach Us  <MapPinned className="text-3xl text-red-200" />
           </h2>
           <p className="md:mx-10 space-y-10 md:text-xl">
@@ -76,34 +76,36 @@ const Content = () => {
             Gurugram, Haryana - 122012
           </p>
           <div className="mt-10 md:mx-10 space-y-5 ">
+        
             <p className="flex items-center">
-              <Phone className="mr-2 text-teal-100 text-xl md:text-2xl" />
-              <span className=" text-xl md:text-2xl font-bold text-white mx-1">Phone:</span>{" "}
+              <Mail className="mr-2 text-red-100 h-4 w-4 md:h-7 md:w-7" />
+              <span className="text-md md:text-2xl font-bold text-white mx-1">Email :</span>{" "}
+              <a
+                href="mailto:hi@potterzwheel.com"
+                className="underline text-red-50 hover:text-red-50 transition-colors mx-8 text-sm md:text-xl"
+              >
+                  hi@potterzwheel.com
+              </a>
+            </p>
+
+            <p className="flex items-center">
+              <Phone className="mr-2 text-teal-100 h-4 w-4 md:h-7 md:w-7" />
+              <span className=" text-md md:text-2xl font-bold text-white mx-1">Phone :</span>{" "}
               <a
                 href="tel:+919810360300"
-                className="underline text-teal-50 hover:text-teal-100 transition-colors mx-6 text-md md:text-xl" 
+                className="underline text-teal-50 hover:text-teal-100 transition-colors mx-6 text-sm md:text-xl" 
               >
                 +91-9810360300
               </a>
             </p>
             <p className="flex items-center">
-              <Mail className="mr-2 text-red-100 text-xl md:text-2xl" />
-              <span className="text-xl md:text-2xl font-bold text-white mx-1">Email:</span>{" "}
-              <a
-                href="mailto:hi@potterzwheel.com"
-                className="underline text-red-50 hover:text-red-50 transition-colors mx-8 text-md md:text-xl"
-              >
-                  hi@potterzwheel.com
-              </a>
-            </p>
-            <p className="flex items-center">
-              <Link className="mr-2 text-blue-100 text-xl md:text-2xl" />
-              <span className="text-xl md:text-2xl font-bold text-white mx-1">Website:</span>{" "}
+              <Link className="mr-2 text-blue-100 h-4 w-4 md:h-7 md:w-7" />
+              <span className="text-md md:text-2xl font-bold text-white mx-1">Website  :</span>{" "}
               <a
                 href="https://potterzwheel.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline text-blue-100 hover:text-blue-50 transition-colors mx-2 text-md md:text-xl "
+                className="underline text-blue-100 hover:text-blue-50 transition-colors mx-3 md:mx-2 text-sm md:text-xl "
               >
                   potterzwheel.com
               </a>
@@ -117,7 +119,7 @@ const Content = () => {
               <Facebook className="text-blue-300 hover:text-blue-300 transition-colors  md:h-8 w-8" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <Twitter className="text-blue-100 hover:text-blue-100 transition-colors  md:h-8 w-8" />
+              <XIcon className="text-gray-400 hover:text-blue-100 transition-colors  md:h-8 w-8" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <Linkedin className="text-white hover:text-white transition-colors  md:h-8 w-8" />
@@ -216,7 +218,7 @@ const Content = () => {
                 htmlFor="service"
                 className="block text-sm font-medium text-gray-700"
               >
-                Interested in Exploring
+                Interested in
               </label>
               <select
                 id="service"
